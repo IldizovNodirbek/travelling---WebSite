@@ -1,0 +1,1156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clr {
+    clear: both;
+}
+
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --second-family: "Lexend Zetta", sans-serif;
+  }
+
+#wrapper-color {
+    background-color:#6347f9;
+    height: 880px;
+}
+
+#header-tvl {
+    display: inline-block;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 0px 0px 150px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.header-navbar {
+    float: right;
+}
+
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 35px 70px 0px 0px;
+    color: #fff;
+    font-family: serif;
+  }
+
+  nav ul li:hover {
+    cursor: pointer;
+    transition: color 1s;
+    color: rgb(188, 187, 187);
+  }
+
+
+.nav-button {
+    display: inline-block;
+    background-color:#6347f9;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 150px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    transition: background-color 1s;
+    background-color: gray;
+    border: dotted;
+}
+
+.main-small-text {
+    text-align: center;
+    margin-top: 150px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 0.19em;
+}
+
+.main-big-text {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    letter-spacing: 0.19em;
+    font-size: 80px;
+    padding: 0px 150px;
+    font-weight: 400;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+ .city-travel-img-1 {
+    width: 270px;
+    height: 304px;
+    background-image: url("../CSS/Imgs/Italy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -160px;
+} 
+
+.city-travel-img-2 {
+    width: 270px;
+    height: 400px;
+    background-image: url("../CSS/Imgs/NewYork-city.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -230px;
+}
+
+.city-travel-img-3 {
+    width: 270px;
+    height: 368px;
+    background-image: url("../CSS/Imgs/Paris.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin-top: -210px;
+}
+
+.city-travel-img-4 {
+    width: 270px;
+    height: 464px;
+    background-image: url("../CSS/Imgs/San-Francisco.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -270px;
+}
+
+.city-travel-img-5 {
+    width: 270px;
+    height: 304px;
+    background-image: url("../CSS/Imgs/Barcelona.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -160px;
+}
+
+.city-travel-img-1 .img-city-text-1 {
+    margin: 320px 0px 0px 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #333;
+}
+
+.city-travel-img-1 .img-state-text-1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+    margin-left: 20px;
+}
+
+.city-travel-img-2 .img-city-text-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #333;
+    margin-top: 410px;
+}
+
+.city-travel-img-2 .img-state-text-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.city-travel-img-3 .img-city-text-3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #333;
+    margin-top: 380px;
+}
+
+.city-travel-img-3 .img-state-text-3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.city-travel-img-4 .img-city-text-4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #333;
+    margin-top: 480px;
+}
+
+.city-travel-img-4 .img-state-text-4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.city-travel-img-5 .img-city-text-5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #333;
+    margin-top: 320px;
+}
+
+.city-travel-img-5 .img-state-text-5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+
+
+.hero-image {
+    float: right;
+}
+
+.hero-image img {
+    margin: 200px 100px 0px 0px;
+}
+
+.color-img {
+    display: inline-block;
+    position: relative;
+    background-color: #FE7354;
+    width: 270px;
+    height: 400px;
+    top: 300px;
+    left: 840px;
+}
+
+.paragraph-color-img {
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px 50px 0px 50px; 
+    word-spacing: 2px;
+}
+
+.paragraph-color-img-change {
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 50px 0px 50px; 
+    word-spacing: 2px;
+}
+
+.paragraph-author {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 40px 0px 0px 60px;
+    font-size: 16px;
+}
+
+.cropped-img {
+    width: 196px;
+    height: 198px;
+    object-fit: cover; 
+    margin-top: 29px;
+    margin-left: 37px;
+}
+
+.about-text {
+    color: rgba(51, 51, 51, 0.5);
+    text-transform: uppercase;
+    margin-top: -180px;
+    margin-left: 200px;
+}
+
+.main-big-text-2 {
+    font-family: var(--second-family);
+    font-size: 60px;
+    font-weight: 400;
+    padding: 0px 800px 0px 200px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.main-small-text-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #333;
+    margin-top: 50px;
+    padding: 0px 900px 0px 200px;
+}
+
+.decoration-1 {
+    border: 2px solid #f07c52;
+    border-radius: 50%;
+    margin: 100px 0px 0px 200px;
+}
+
+.decoration-2 {
+    border: 2px solid #f07c52;
+    border-radius: 50%;
+    margin: 40px 0px -30px 20px;
+}
+
+.great-adventures-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #333;
+    margin: 10px 0px 0px 300px;
+}
+
+.great-adventures-under-txt {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 0px 870px 0px 300px;
+}
+
+.about-us-btn {
+   background-color:#FE7354;
+   border:#FE7354;
+   color: #fff;
+   padding: 10px 20px;
+   font-size: 16px;
+   text-transform: uppercase;
+   margin: 40px 0px 0px 200px;
+}
+
+.about-us-btn:hover {
+    cursor: pointer;
+    border: 1px solid rgb(126, 2, 2);
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);    
+}
+
+.wrap-all-content {
+    width: 100%;
+    height: 944px;
+    background: rgba(254, 114, 84, 0.08);
+    margin-top: 200px;
+}
+
+.exclusive-offers-text {
+    padding-top: 80px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.discover-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    text-align: center;
+    color: #000;
+    padding: 50px 400px 0px 400px;
+    letter-spacing: 2px;
+}
+
+.discover-all-img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.discover-special-1 {
+    position: relative;
+    margin-left: 150px;
+    background-image: url("./Imgs/discover-img-1.jpg");
+    background-size: cover;
+    width: 370px;
+    height: 400px;
+}
+
+.discover-special-2 {
+    background-image: url("./Imgs/discover-img-2.jpg");
+    background-size: cover;
+    width: 370px;
+    height: 400px;
+}
+
+.discover-special-3 {
+    position: relative;
+    margin-right: 150px;
+    background-image: url("./Imgs/discover-img-3.jpg");
+    background-size: cover;
+    width: 370px;
+    height: 400px;
+}
+
+.circle-discount {
+    background:  #f07c52;
+    border-radius: 100%;
+    width: 144px;
+    height: 144px;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    margin: 230px 0px 0px 30px;
+}
+
+.circle-discount p {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.discover-txt-under {
+    font-size: 40px;
+    font-family: "Lexend Zetta", sans-serif;
+    margin-top: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.discover-txt-next {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Lexend Zetta", sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.adventures-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.5);
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.adventures-text-2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    color: #333;
+    margin-top: 50px;
+    padding-left: 100px;
+    letter-spacing: 2px;
+}
+
+.adventures-text-3 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    color: #333;
+    margin-top: 10px;
+    padding-left: 100px;
+    letter-spacing: 2px;
+}
+
+.adventures-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.adventures-cards-under-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.cards {
+    background: #fff2f2;
+    width: 270px;
+    height: 352px;
+}
+
+.cards-under-2 {
+    background: #e6e6ff;
+    width: 270px;
+    height: 352px;
+}
+
+.card-change-special {
+    background: #6347f9;
+    width: 270px;
+    height: 352px;
+}
+
+.cards img {
+    margin-top: 20px;
+}
+
+.cards-under-2 img {
+    margin-top: 20px;
+}
+
+.card-change-special img {
+    margin-top: 25px;
+}
+
+.card-change-special p {
+    color: #fff;
+}
+
+.card-state {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #333;
+    padding: 30px 0px 0px 30px;
+}
+
+
+.card-time {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 10px 0px 0px 30px;
+}
+
+.card-money {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: #333;
+    padding: 20px 0px 0px 30px;
+}
+
+.card-btn {
+    background-color: #fff;
+    border: 1px solid #f07c52;
+    padding: 15px 30px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #f07c52;
+    margin: 100px 0px 0px 685px;
+}
+
+.card-btn:hover {
+    cursor: pointer;
+    background: #f07c52;
+    color: #fff;
+}
+
+.island-img {
+    float: left;
+    filter: brightness(0.6);
+    margin: -300px 0px 0px 100px;
+}
+
+.person-tickets {
+    position: relative;
+    width: 305px;
+    height: 438px;
+    background-image: url("../CSS/Imgs/person-with-tickets.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 280px;
+    left: 420px;
+}
+
+.features-text {
+    float: right;
+    margin: 200px 500px 0px 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.get-unique-text {
+    float: right;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    color: #333;
+    margin: 50px 100px 0px 300px;
+    padding-left: 600px;
+}
+
+.bookmark-text {
+    float: right;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #333;
+    margin-top: 20px;
+    padding: 0px 180px 0px 900px;
+}
+
+.wrap-all-services {
+    float: right;
+    display: flex;
+    margin-top: 50px;
+}
+
+.wrap-all-services p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #333;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-services {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+svg {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.item-services span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #333;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.service-btn {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 1px solid #f07c52;
+    background: #f07c52;
+    padding: 17px 30px 15px 30px;
+    margin: -150px 0px 0px 890px;
+}
+
+.service-btn:hover {
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #FE7354;
+    color:#FE7354;
+}
+
+.testimonials-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.5);
+    margin-top: 200px;
+}
+
+.testimonials-paragraph {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+
+.testimonials-paragraph-2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.quote {
+    position: absolute;
+    margin: 0px 0px 0px 40px;
+}
+
+.testimonials-circle-imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.circle-imgs {
+    border-radius: 50%; 
+    text-align: left; 
+    margin: 10px; 
+}
+
+.circle-img-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-top: 8px; 
+}
+
+.circle-img-job {
+    font-family: var(--font-family); 
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #999; 
+    margin-top: 4px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.wrapper-color-2 {
+    background-color: #00001a;
+    width: 100%;
+    height: 2200px;
+    margin-top: 100px;
+}
+
+.our-block-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 100px 0px 0px 160px;
+}
+
+.our-travel-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 50px 940px 0px 160px;
+}
+
+.see-more-btn {
+    float: right;
+    background:#00001a;
+    border: 1px solid lightgrey;
+    padding: 15px 30px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: -50px 165px 0px 0px;
+}
+
+.see-more-btn:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+}
+
+.wrapper-travel-articles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.articles-1 {
+    width: 570px;
+    height: 560px;
+    margin-left: 120px;
+    background: #fff;
+}
+
+
+.articles-2 {
+    width: 570px;
+    height: 560px;
+    margin-right: 120px;
+    background: #fff;
+}
+
+
+.article-time {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 30px 0px 0px 40px;
+}
+
+.article-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #333;
+    padding: 15px 150px 0px 40px;
+}
+
+.article-author {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 20px 0px 0px 40px;
+}
+
+.article-main-img {
+    margin-top: 40px;
+}
+
+.articles-circle-img {
+    float: right;
+    border-radius: 100%;
+    margin: 60px 60px 0px 0px;
+}
+
+.newsletter-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 100px 0px 0px 160px;
+}
+
+.newsletter-text-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0px 0px 160px;
+
+}
+
+.article-input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 8px 50px 8px 10px;
+}
+
+.article-button {
+    font-family: var(--second-family);
+    background: #009933;
+    border:#009933;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 15px 30px;
+    margin-left: 20px;
+}
+
+.wrap-input {
+    float: right;
+    margin: -60px 160px 0px 0px;
+}
+
+.article-button:hover {
+    cursor: pointer;
+    background: #00ff00;
+    border: 1px solid #009933;
+    color: #333;
+}
+
+.horizontal-row {
+    width: 1200px;
+    height: 1px;
+    background: #fff;
+    opacity: 0.08;
+    margin: 80px 0px 0px 160px;
+}
+
+
+.location-photo {
+    width: 570px;
+    height: 592px;
+    background-image: url("../CSS/Imgs/location.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 200px 0px 0px 160px;
+}
+
+.location-wrap {
+    display: flex;
+    background: #f07c52;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px 0px 0px 260px;
+}
+
+.location-center {
+    margin: 15px 0px 0px 14px;
+}
+
+
+.location-address {
+    margin: 200px 0px 0px 150px;
+}
+
+.wrap-for-svg {
+    position: relative;
+    margin: 50px 0px 0px 0px;
+}
+
+.circle-svg {
+    position: relative;
+    margin-right: 20px;
+}
+
+.contact-container {
+    float: right;
+    margin: -590px 200px 0px 0px;
+}
+
+.contact-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.get-in-text-1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.get-in-text-2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 114%;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+
+.contact-paragraph-1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contact-paragraph-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #fff;
+}
+
+.phone-svg {
+    margin-top: 40px;
+}
+
+.wrapper-special-email {
+    display: flex;
+}
+
+.contact-number {
+    display: inline;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #fff;
+}
+
+.telegram-svg {
+    margin-top: 25px;
+}
+
+.contact-email {
+    margin: 20px 0px 0px 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-btn {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    background: #009933;
+    border:#009933;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
+    background: #00ff00;
+    border: 1px solid #009933;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.tvl-part-end {
+    width: 100%;
+    height: 590px;
+    background: #0c1a29;
+}
+
+.footer-tvl {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 80px 0px 0px 160px;
+}
+
+table {
+    padding-left: 250px;
+}
+
+
+table thead tr th {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 250px;
+}
+
+table thead tr th:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+tbody tr td {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #fff;
+    padding-left: 250px;
+}
+
+tbody tr td:hover {
+    cursor: pointer;
+    color: gold;
+}
+
+
+.special-change {
+    padding-top: 20px;
+}
+
+
+.footer-paragraph {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0px 0px 160px;
+}
+
+.footer-paragraph-2 {
+    float: right;
+    padding-top: 50px;
+    padding-right: 150px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: right;
+    color: #fff;
+}
