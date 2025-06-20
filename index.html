@@ -3,342 +3,619 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site - About travel</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>TVL - Discover Amazing Destinations</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div id="wrapper-color">
-    <header>
-        <h1 id="header-tvl">TVL</h1>
-        <nav class="header-navbar">
-           <ul>
-            <li>About</li>
-            <li>Tours</li>
-            <li>Blog</li>
-            <li>Contact</li>
-            <button class="nav-button">BOOK TRIP</button>
-           </ul>
-        </nav>
-    </header>
-    <h3 class="main-small-text">Book Your Trip</h3>
-    <h1 class="main-big-text">Choose Your Favorite Tour To Explore</h1>
-</div>
-<div class="img-container">
-    <div class="city-travel-img-1">
-        <p class="img-city-text-1">Rome</p>
-        <p class="img-state-text-1">Italy</p>
-    </div>
-    <div class="city-travel-img-2">
-        <p class="img-city-text-2">New York City</p>
-        <p class="img-state-text-2">USA</p>
-    </div>
-    <div class="city-travel-img-3">
-        <p class="img-city-text-3">Paris</p>
-        <p class="img-state-text-3">France</p>
-    </div>
-    <div class="city-travel-img-4">
-        <p class="img-city-text-4">Barcelona</p>
-        <p class="img-state-text-4">Spain</p>
-    </div>
-    <div class="city-travel-img-5">
-        <p class="img-city-text-5">San Francisco</p>
-        <p class="img-state-text-5">USA</p>
-    </div>
-</div>
-<div class="hero-image">
-    <img src="./CSS/Imgs/hero-travelling-img.jpg" alt="hero-traveling-img" width="470" height="592">
-</div>
- <div class="color-img">
-    <p class="paragraph-color-img">The copy warned the</p>
-    <p class="paragraph-color-img-change">Little Blind Text, that</p>
-    <p class="paragraph-color-img-change">where it came from.</p>
-    <p class="paragraph-author">- Alfie Wood</p>
-    <img class="cropped-img" src="./CSS/Imgs/photographerman.jpg" alt="photographerman">
- </div>
- <h3 class="about-text">About</h3>
- <p class="main-big-text-2">Explore Our Planet Together</p>
- <p class="main-small-text-2">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
- <svg class="decoration-1" width="10" height="10">
-    <circle cx="100" cy="100" r="90" stroke="black" stroke-width="10" fill="#f07c52" />
-  </svg>
-  <svg class="decoration-2" width="10" height="10">
-    <circle cx="100" cy="100" r="90" stroke="black" stroke-width="10" fill="#f07c52" />
-  </svg>
- <h3 class="great-adventures-text">Great Adventures</h3>
- <p class="great-adventures-under-txt">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language. </p>
- <button class="about-us-btn">About Us</button>
- <div class="wrap-all-content">
-    <h3 class="exclusive-offers-text">EXCLUSIVE OFFERS</h3>
-    <p class="discover-text">Discover Popular Destinations</p>
-    <div class="discover-all-img">
-        <div class="discover-special-1">
-            <div class="circle-discount">
-                <p>$199</p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TVL</h2>
             </div>
-            <p class="discover-txt-under">Rome</p>
-            <p class="discover-txt-next">Italy</p>
-        </div>
-        <div class="discover-special-2">
-            <div class="circle-discount">
-                <p>$250</p>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#tours" class="nav-link">Tours</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary">Book Trip</button>
             </div>
-            <p class="discover-txt-under">New York</p>
-            <p class="discover-txt-next">USA</p>
-        </div>
-        <div class="discover-special-3">
-            <div class="circle-discount">
-                <p>$129</p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <p class="discover-txt-under">Paris</p>
-            <p class="discover-txt-next">France</p>
         </div>
-    </div>
- </div>
- <h3 class="adventures-text">Best Adventures</h3>
- <p class="adventures-text-2">Our Popular</p>
- <p class="adventures-text-3">Tours & Expeditions</p>
- <div class="adventures-cards">
-    <div class="cards">
-        <p class="card-state">Rome, Italy</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$349</p>
-        <img src="./CSS/Imgs/Italy-roma.jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="cards">
-        <p class="card-state">New York City, USA</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$200</p>
-        <img src="./CSS/Imgs/NewYork-city.jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="cards">
-        <p class="card-state">Barcelona, Spain</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$95</p>
-        <img src="./CSS/Imgs/Barcelona (2).jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="card-change-special">
-        <p class="card-state">Paris, France</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$1200</p>
-        <img src="./CSS/Imgs/France.jpg" alt="state-photo" width="270" height="176">
-    </div>
- </div>
+    </nav>
 
- <div class="adventures-cards-under-2">
-    <div class="cards-under-2">
-        <p class="card-state">San Francisco, USA</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$480</p>
-        <img src="./CSS/Imgs/San-Francisco.jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="cards-under-2">
-        <p class="card-state">Amesbury, UK</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$569</p>
-        <img src="./CSS/Imgs/Amesbury.jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="cards-under-2">
-        <p class="card-state">Versailles, France</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$100</p>
-        <img src="./CSS/Imgs/Versal.jpg" alt="state-photo" width="270" height="176">
-    </div>
-    <div class="cards-under-2">
-        <p class="card-state">Venice, Italy</p>
-        <p class="card-time">12-24 Jun 2020</p>
-        <p class="card-money">$99</p>
-        <img src="./CSS/Imgs/Vemice.jpg" alt="state-photo" width="270" height="176">
-    </div>
- </div>
- <button class="card-btn">SEE MORE</button>
- <div class="clr"></div>
- <h3 class="features-text">Features</h3>
- <p class="get-unique-text">Get Unique Experience</p>
- <p class="bookmark-text">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language. </p>
- <img class="island-img" src="./CSS/Imgs/island-img.jpg" alt="island-img" width="470" height="592">
- <div class="person-tickets"></div>
- <div class="wrap-all-services">
-    <ul class="services">
-        <li class="item-services"><svg width="24" height="22" viewBox="0 0 24 22" fill="#f07c52" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1158L2.053 9.21881C4.454 10.3808 5.977 11.2638 8.675 13.1878C13.748 7.43081 17.101 4.50981 23.332 0.632812L24 2.16881C18.861 6.65281 15.098 11.6478 9.679 21.3668C6.336 17.4308 4.105 14.9208 0 11.1158Z" fill="#F07C52" /></svg><span>Transfers</span></li>
-        <li class="item-services"><svg width="24" height="22" viewBox="0 0 24 22" fill="#f07c52" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1158L2.053 9.21881C4.454 10.3808 5.977 11.2638 8.675 13.1878C13.748 7.43081 17.101 4.50981 23.332 0.632812L24 2.16881C18.861 6.65281 15.098 11.6478 9.679 21.3668C6.336 17.4308 4.105 14.9208 0 11.1158Z" fill="#F07C52" /></svg> <span>Guides</span></li>
-        <li class="item-services"><svg width="24" height="22" viewBox="0 0 24 22" fill="#f07c52" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1158L2.053 9.21881C4.454 10.3808 5.977 11.2638 8.675 13.1878C13.748 7.43081 17.101 4.50981 23.332 0.632812L24 2.16881C18.861 6.65281 15.098 11.6478 9.679 21.3668C6.336 17.4308 4.105 14.9208 0 11.1158Z" fill="#F07C52" /></svg> <span>Optimal</span></li>
-        <li class="item-services"><svg width="24" height="22" viewBox="0 0 24 22" fill="#f07c52" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1158L2.053 9.21881C4.454 10.3808 5.977 11.2638 8.675 13.1878C13.748 7.43081 17.101 4.50981 23.332 0.632812L24 2.16881C18.861 6.65281 15.098 11.6478 9.679 21.3668C6.336 17.4308 4.105 14.9208 0 11.1158Z" fill="#F07C52" /></svg> <span>Locals</span></li>
-    </ul>
- </div>
- <div class="clr"></div>
- <button class="service-btn">Service</button>
- <h1 class="testimonials-text">Testimonials</h1>
- <p class="testimonials-paragraph">Travel Tips</p>
- <p class="testimonials-paragraph-2">From Travellers</p>
- <div class="testimonials-container">
-    <div class="testimonials-card">
-        <svg class="quote" width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="#3A76E5" />
-          </svg>
-          <svg width="354" height="320" viewBox="0 0 354 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#F5F6F8" d="M354 0H0V288V320L32 288H354V0Z" />
-            <text x="50%" y="25%"  font-family="Arial" font-size="16" text-anchor="middle" fill="rgba(51, 51, 51, 0.5)">
-              <tspan x="50%" y="15%" dy="1.2em">"When she reached the first hills</tspan>
-              <tspan x="50%" y="25%" dy="1.2em">of the Italic Mountains, she had a</tspan>
-              <tspan x="50%" y="35%" dy="1.2em">last view back on the skyline of</tspan>
-              <tspan x="50%" y="45%" dy="1.2em">her hometown Bookmarksgrove</tspan>
-              <tspan x="50%" y="55%" dy="1.2em">the headline of Alphabet Villag</tspan>
-              <tspan x="50%" y="65%" dy="1.2em">and the subline of her own road"</tspan>
-            </text>
-          </svg>
-    </div>
-    <div class="testimonials-card">
-        <svg class="quote" width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="#3A76E5" />
-          </svg>
-          <svg width="354" height="320" viewBox="0 0 354 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#F5F6F8" d="M354 0H0V288V320L32 288H354V0Z" />
-            <text x="50%" y="25%"  font-family="Arial" font-size="16" text-anchor="middle" fill="rgba(51, 51, 51, 0.5)">
-              <tspan x="50%" y="15%" dy="1.2em">"When she reached the first hills</tspan>
-              <tspan x="50%" y="25%" dy="1.2em">of the Italic Mountains, she had a</tspan>
-              <tspan x="50%" y="35%" dy="1.2em">last view back on the skyline of</tspan>
-              <tspan x="50%" y="45%" dy="1.2em">her hometown Bookmarksgrove</tspan>
-              <tspan x="50%" y="55%" dy="1.2em">the headline of Alphabet Villag</tspan>
-              <tspan x="50%" y="65%" dy="1.2em">and the subline of her own road"</tspan>
-            </text>
-          </svg>
-    </div>
-    <div class="testimonials-card">
-        <svg class="quote" width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="#3A76E5" />
-          </svg>
-          <svg width="354" height="320" viewBox="0 0 354 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#F5F6F8" d="M354 0H0V288V320L32 288H354V0Z" />
-            <text x="50%" y="25%"  font-family="Arial" font-size="16" text-anchor="middle" fill="rgba(51, 51, 51, 0.5)">
-              <tspan x="50%" y="15%" dy="1.2em">"When she reached the first hills</tspan>
-              <tspan x="50%" y="25%" dy="1.2em">of the Italic Mountains, she had a</tspan>
-              <tspan x="50%" y="35%" dy="1.2em">last view back on the skyline of</tspan>
-              <tspan x="50%" y="45%" dy="1.2em">her hometown Bookmarksgrove</tspan>
-              <tspan x="50%" y="55%" dy="1.2em">the headline of Alphabet Villag</tspan>
-              <tspan x="50%" y="65%" dy="1.2em">and the subline of her own road"</tspan>
-            </text>
-          </svg>
-    </div>
- </div>
-</div>
-<div class="testimonials-circle-imgs">
-    <img class="circle-imgs" src="./CSS/Imgs/circle-img-2.jpg" alt="person-photo" width="78" height="78">
-        <h3 class="circle-img-name">Artem Sazonov</h3>
-        <p class="circle-img-job">Student</p>
-    <img class="circle-imgs" src="./CSS/Imgs/circle-img-1.jpg" alt="person-photo" width="78" height="78">
-        <h3 class="circle-img-name">Merrile Burgett</h3>
-        <p class="circle-img-job">Designer</p>
-    <img class="circle-imgs" src="./CSS/Imgs/circle-img-3.jpg" alt="person-photo" width="78" height="78">
-        <h3 class="circle-img-name">Gibby Radki</h3>
-        <p class="circle-img-job">Developer</p>
-</div>
-<div class="testimonials-carousel">
-    <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="#F07C52" />
-        <path d="M47.5 8C47.5 12.1421 44.1421 15.5 40 15.5C35.8579 15.5 32.5 12.1421 32.5 8C32.5 3.85786 35.8579 0.5 40 0.5C44.1421 0.5 47.5 3.85786 47.5 8Z" stroke="#F07C52" stroke-opacity="0.503227" />
-        <path d="M79.5 8C79.5 12.1421 76.1421 15.5 72 15.5C67.8579 15.5 64.5 12.1421 64.5 8C64.5 3.85786 67.8579 0.5 72 0.5C76.1421 0.5 79.5 3.85786 79.5 8Z" stroke="#F07C52" stroke-opacity="0.503227" />
-      </svg>
-</div>
-<div class="wrapper-color-2">
-    <h3 class="our-block-text">Our Blog</h3>
-    <p class="our-travel-text">Read Our Travel Articles</p>
-    <button class="see-more-btn">See More</button>
-    <div class="wrapper-travel-articles">
-        <div class="articles-1">
-            <img class="articles-circle-img" src="./CSS/Imgs/circle-img-1.jpg" alt="circle-img-photo" width="64" height="64">
-            <p class="article-time">15 May 2020</p>
-            <p class="article-text">Attractions proved to be firm favorites with travelers</p>
-            <p class="article-author">Torsten Paulsson</p>
-            <img class="article-main-img" src="./CSS/Imgs/travel-bag.jpg" alt="travel-bag-photo" width="570" height="336">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="articles-2">
-            <img class="articles-circle-img" src="./CSS/Imgs/circle-img-2.jpg" alt="circle-img-photo" width="64" height="64">
-            <p class="article-time">10 May 2020</p>
-            <p class="article-text"> Best-preserved monuments of Ancient Rome</p>
-            <p class="article-author">Isaac Hunt</p>
-            <img class="article-main-img" src="./CSS/Imgs/person-on-mountain.jpg" alt="person-on-mountain-photo" width="570" height="336">
-        </div>
-    </div>
-    <p class="newsletter-text">Newsletter</p>
-    <p class="newsletter-text-2">Separated they live in right at the coast of the Semantics</p>
-    <form class="wrap-input">
-        <input type="text" placeholder="Your Email" class="article-input">
-        <button class="article-button">Subscribe</button>
-    </form>
-    <div class="horizontal-row"></div>
-    <div class="location-photo">
-        <svg class="location-address" width="270" height="144" viewBox="0 0 270 144" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M270 0H0V128H118L135 144L152 128H270V0Z"/>
-            <text x="50" y="50" font-family="Arial" font-size="16" fill="#333">875 School Street</text>
-            <text x="50" y="80" font-family="Arial" font-size="16" fill="#333">Ormond Beach, FL 32174</text>
-        </svg>
-            <div class="location-wrap">
-                <svg class="location-center" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.478 0 0 4.395 0 9.815C0 15.2599 4.27992 19.0006 9.81608 23.8392L10 24L10.1839 23.8392C15.7201 19.0006 20 15.2599 20 9.815C20 4.395 15.522 0 10 0ZM10 18C5.581 18 2 14.418 2 10C2 5.582 5.581 2 10 2C14.419 2 18 5.582 18 10C18 14.418 14.419 18 10 18ZM11 11H14V9H11V6H9V9H6V11H9V14H11V11Z" fill="white" />
-                  </svg>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <p class="hero-subtitle">Book Your Dream Trip</p>
+                <h1 class="hero-title">Discover Amazing Destinations Around The World</h1>
+                <p class="hero-description">Explore breathtaking locations, create unforgettable memories, and embark on the adventure of a lifetime with our curated travel experiences.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">Explore Tours</button>
+                    <button class="btn btn-secondary btn-large">Watch Video</button>
+                </div>
             </div>
-    </div>
-    <div class="contact-container">
-        <p class="contact-text">Contact</p>   
-        <p class="get-in-text-1">Get In Touch</p>
-        <p class="get-in-text-2">With Us</p>
-        <p class="contact-paragraph-1">Separated they live in Bookmarksgrove right at </p>
-        <p class="contact-paragraph-2">the coast of the Semantics, a large language.</p>
-        <svg class="phone-svg" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.28902 1.039C-4.91198 4.794 6.52302 27.021 13.89 23.654C14.011 23.599 15.992 22.625 16 22.621L12.479 15.826C12.472 15.83 10.506 16.796 10.415 16.837C8.17602 17.923 3.61702 9.017 5.80602 7.843L7.88802 6.817L4.39602 0L2.28902 1.039ZM15.269 11.115L12.352 10.245L13.221 7.329C13.967 7.551 14.63 8.059 15.029 8.798C15.429 9.536 15.492 10.368 15.269 11.115ZM14.156 4.187C15.707 4.649 17.082 5.703 17.912 7.238C18.743 8.774 18.872 10.501 18.41 12.051L16.615 11.516C16.94 10.425 16.848 9.21 16.263 8.129C15.68 7.048 14.712 6.307 13.62 5.983L14.156 4.187ZM20.835 5.656C19.569 3.312 17.471 1.705 15.106 1L14.557 2.841C16.452 3.405 18.132 4.693 19.148 6.57C20.162 8.446 20.32 10.557 19.756 12.452L21.596 13C22.301 10.634 22.104 7.999 20.835 5.656Z" fill="white" />
-          </svg>
-          <p class="contact-number">+1 (234) 567-89-02</p>
-         <div class="wrapper-special-email">
-            <svg class="telegram-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12L11 15.1L18 7L9.844 12.672L5.532 11.47L20.894 3.79L16.92 18.36L13.17 15.021L11 17.946V17.177L9 16.617V24L13.473 17.969L18 22L24 0L0 12Z" fill="white" />
-              </svg>
-              <p class="contact-email">travel@adventure.com</p>
-         </div>
-          <button class="contact-btn">Contact Us</button>
-    </div>  
-</div>
-<footer class="tvl-part-end">
-    <p class="footer-tvl">TVL</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Menu</th>
-                <th>Service</th>
-                <th>Social</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="special-change">About</td>
-                <td class="special-change">Transfer</td>
-                <td><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.66667 5.33333H0V8H2.66667V16H6.66667V8H9.09333L9.33333 5.33333H6.66667V4.22267C6.66667 3.58533 6.79467 3.33333 7.41067 3.33333H9.33333V0H6.128C3.73067 0 2.66667 1.056 2.66667 3.07733V5.33333Z" fill="white" />
-                  </svg></td>
-            </tr>
-            <tr>
-                <td>Tours</td>
-                <td>Guides</td>
-                <td><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 1.54C15.412 1.80133 14.7787 1.97733 14.1147 2.05733C14.7933 1.65067 15.312 1.008 15.5587 0.241333C14.924 0.617333 14.2213 0.890667 13.4733 1.03733C12.876 0.398667 12.0213 0 11.0787 0C8.95867 0 7.40133 1.97733 7.88 4.03067C5.15333 3.89333 2.73333 2.58667 1.11467 0.601333C0.254667 2.076 0.669333 4.00667 2.13067 4.984C1.59333 4.96667 1.088 4.81867 0.645333 4.57333C0.609333 6.09333 1.7 7.516 3.27867 7.83333C2.81733 7.95867 2.31067 7.988 1.796 7.88933C2.21333 9.19333 3.428 10.1413 4.86267 10.168C3.48 11.2507 1.74267 11.7347 0 11.5293C1.45333 12.4613 3.17733 13.004 5.03067 13.004C11.1267 13.004 14.5693 7.856 14.3613 3.23867C15.004 2.77733 15.56 2.19867 16 1.54Z" fill="white" />
-                  </svg></td>
-            </tr>
-            <tr>
-                <td>Blog</td>
-                <td>Locals</td>
-                <td><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.82667 0 5.556 0.00933333 4.70133 0.0493333C1.79467 0.182667 0.181333 1.79467 0.048 4.70133C0.00933333 5.556 0 5.828 0 8C0 10.1733 0.00933333 10.4453 0.048 11.2987C0.181333 14.204 1.79467 15.8187 4.70133 15.952C5.556 15.9907 5.82667 16 8 16C10.1733 16 10.4453 15.9907 11.3 15.952C14.2013 15.8187 15.8213 14.2067 15.952 11.2987C15.9907 10.4453 16 10.1733 16 8C16 5.828 15.9907 5.556 15.952 4.70133C15.8213 1.79867 14.2067 0.181333 11.3 0.0493333C10.4453 0.00933333 10.1733 0 8 0ZM8 1.44267C10.136 1.44267 10.3893 1.45067 11.2333 1.48933C13.4027 1.588 14.4133 2.616 14.5133 4.768C14.5507 5.612 14.5587 5.864 14.5587 8C14.5587 10.136 14.5507 10.3893 14.5133 11.232C14.4133 13.3827 13.404 14.4133 11.2333 14.512C10.3893 14.5493 10.1373 14.5587 8 14.5587C5.864 14.5587 5.61067 14.5507 4.768 14.512C2.59467 14.412 1.588 13.38 1.488 11.232C1.45067 10.3893 1.44133 10.136 1.44133 8C1.44133 5.864 1.45067 5.61067 1.488 4.768C1.58667 2.61467 2.59733 1.58667 4.768 1.488C5.61067 1.44933 5.864 1.44267 8 1.44267ZM3.892 8C3.892 5.73067 5.732 3.892 8 3.892C10.268 3.892 12.108 5.732 12.108 8C12.108 10.2693 10.268 12.108 8 12.108C5.732 12.108 3.892 10.2693 3.892 8ZM8 10.6667C6.52667 10.6667 5.33333 9.47333 5.33333 8C5.33333 6.528 6.52667 5.33333 8 5.33333C9.472 5.33333 10.668 6.52667 10.668 8C10.668 9.47333 9.472 10.6667 8 10.6667ZM11.3093 3.73067C11.3093 3.2 11.74 2.77067 12.2693 2.77067C12.8013 2.77067 13.2307 3.2 13.2307 3.73067C13.2307 4.26133 12.8 4.69067 12.2693 4.69067C11.7387 4.69067 11.3093 4.26 11.3093 3.73067Z" fill="white" />
-                  </svg></td>
-            </tr>
-            <tr>
-                <td>Contact</td>
-                <td>Optimal</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="horizontal-row"></div>
-    <p class="footer-paragraph">Copyright &copy; 2020 Laaqiq. All Rights Reserved.</p>
-    <p class="footer-paragraph-2">Terms of Use</p>
-    <p class="footer-paragraph-2">Privacy Policy</p>
-</footer>   
+        </div>
+        <div class="hero-destinations">
+            <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
+                <div class="destination-info">
+                    <h3>Rome</h3>
+                    <p>Italy</p>
+                </div>
+            </div>
+            <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
+                <div class="destination-info">
+                    <h3>New York</h3>
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="destination-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
+                <div class="destination-info">
+                    <h3>Paris</h3>
+                    <p>France</p>
+                </div>
+            </div>
+            <div class="destination-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
+                <div class="destination-info">
+                    <h3>Barcelona</h3>
+                    <p>Spain</p>
+                </div>
+            </div>
+            <div class="destination-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
+                <div class="destination-info">
+                    <h3>San Francisco</h3>
+                    <p>USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-subtitle">About Us</span>
+                    <h2 class="section-title">Explore Our Planet Together</h2>
+                    <p class="section-description">We are passionate travel enthusiasts dedicated to creating extraordinary experiences that connect you with the world's most beautiful destinations. Our expert team curates unique adventures that go beyond typical tourism.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Great Adventures</h3>
+                                <p>Discover hidden gems and create unforgettable memories with our carefully crafted itineraries.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Expert Guides</h3>
+                                <p>Our local experts provide authentic insights and ensure your safety throughout your journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Adventure">
+                        <div class="testimonial-card">
+                            <p>"The journey of a thousand miles begins with a single step. Let us guide you on that incredible adventure."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Author">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Travel Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="destinations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Exclusive Offers</span>
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-description">Discover our most sought-after destinations with special pricing and exclusive experiences.</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                        <div class="destination-overlay">
+                            <div class="price-tag">$299</div>
+                            <button class="btn btn-white btn-small">View Details</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Rome</h3>
+                        <p>Italy</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.8 (120 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                        <div class="destination-overlay">
+                            <div class="price-tag">$399</div>
+                            <button class="btn btn-white btn-small">View Details</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York</h3>
+                        <p>USA</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.9 (89 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=600')">
+                        <div class="destination-overlay">
+                            <div class="price-tag">$249</div>
+                            <button class="btn btn-white btn-small">View Details</button>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris</h3>
+                        <p>France</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.7 (156 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Best Adventures</span>
+                <h2 class="section-title">Popular Tours & Expeditions</h2>
+            </div>
+            <div class="tours-grid">
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tour-image">
+                        <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rome Tour">
+                        <div class="tour-badge">Popular</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-header">
+                            <h3>Rome, Italy</h3>
+                            <div class="tour-price">$349</div>
+                        </div>
+                        <p class="tour-date">12-24 Jun 2024</p>
+                        <p class="tour-description">Explore the eternal city with guided tours of the Colosseum, Vatican, and hidden local gems.</p>
+                        <div class="tour-features">
+                            <span class="feature-tag">7 Days</span>
+                            <span class="feature-tag">All Inclusive</span>
+                            <span class="feature-tag">Guide</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Book Now</button>
+                    </div>
+                </div>
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tour-image">
+                        <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=400" alt="New York Tour">
+                        <div class="tour-badge">Hot Deal</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-header">
+                            <h3>New York City, USA</h3>
+                            <div class="tour-price">$299</div>
+                        </div>
+                        <p class="tour-date">15-28 Jul 2024</p>
+                        <p class="tour-description">Experience the city that never sleeps with Broadway shows, Central Park, and iconic landmarks.</p>
+                        <div class="tour-features">
+                            <span class="feature-tag">5 Days</span>
+                            <span class="feature-tag">City Tour</span>
+                            <span class="feature-tag">Museums</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Book Now</button>
+                    </div>
+                </div>
+                <div class="tour-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tour-image">
+                        <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Barcelona Tour">
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-header">
+                            <h3>Barcelona, Spain</h3>
+                            <div class="tour-price">$199</div>
+                        </div>
+                        <p class="tour-date">20-30 Aug 2024</p>
+                        <p class="tour-description">Discover Gaudí's masterpieces, enjoy tapas tours, and relax on beautiful Mediterranean beaches.</p>
+                        <div class="tour-features">
+                            <span class="feature-tag">6 Days</span>
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Culture</span>
+                        </div>
+                        <button class="btn btn-primary btn-full">Book Now</button>
+                    </div>
+                </div>
+                <div class="tour-card featured" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tour-image">
+                        <img src="https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Paris Tour">
+                        <div class="tour-badge">Featured</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-header">
+                            <h3>Paris, France</h3>
+                            <div class="tour-price">$449</div>
+                        </div>
+                        <p class="tour-date">10-20 Sep 2024</p>
+                        <p class="tour-description">Fall in love with the City of Light through romantic walks, world-class museums, and fine dining.</p>
+                        <div class="tour-features">
+                            <span class="feature-tag">8 Days</span>
+                            <span class="feature-tag">Luxury</span>
+                            <span class="feature-tag">Romance</span>
+                        </div>
+                        <button class="btn btn-white btn-full">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tours-cta" data-aos="fade-up">
+                <button class="btn btn-outline">View All Tours</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-content">
+                <div class="services-image" data-aos="fade-right">
+                    <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Services">
+                    <div class="services-card">
+                        <div class="services-card-content">
+                            <h4>24/7 Support</h4>
+                            <p>We're here to help you every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-text" data-aos="fade-left">
+                    <span class="section-subtitle">Features</span>
+                    <h2 class="section-title">Get Unique Experience</h2>
+                    <p class="section-description">We provide comprehensive travel services to ensure your journey is seamless, comfortable, and unforgettable.</p>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span>Airport Transfers</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span>Expert Guides</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span>Optimal Routes</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.21 9l-4.38-6.56a.993.993 0 00-.83-.42c-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27C23 10.18 23 10.09 23 10c0-.55-.45-1-1-1h-4.79z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <span>Local Experiences</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Our Services</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Travelers Say</h2>
+            </div>
+            <div class="testimonials-slider swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <p>"TVL made our honeymoon absolutely perfect. From the moment we landed to our departure, everything was seamlessly organized. The local guides were knowledgeable and friendly, and the accommodations exceeded our expectations."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson">
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <span>Travel Enthusiast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <p>"As a solo traveler, I was initially nervous about my trip to Europe. TVL's team provided excellent support and connected me with amazing fellow travelers. It was the adventure of a lifetime!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Michael Chen">
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <span>Solo Adventurer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21.218V36H19.966V16H12C12 11.578 15.126 6.136 19.992 4.302L18 0C7.496 2.078 0 9.81 0 21.218ZM28.034 21.218V36H48V16H40C40 11.578 43.126 6.136 47.99 4.302L46 0C35.496 2.078 28.034 9.81 28.034 21.218Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <p>"The family trip organized by TVL was incredible. They managed to create an itinerary that kept both our teenagers and grandparents engaged and happy. Truly professional service!"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Emma Rodriguez">
+                                    <div class="author-info">
+                                        <h4>Emma Rodriguez</h4>
+                                        <span>Family Traveler</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Blog</span>
+                <h2 class="section-title">Latest Travel Stories</h2>
+                <button class="btn btn-outline">View All Posts</button>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Tips">
+                        <div class="blog-category">Travel Tips</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-author">By Sarah Johnson</span>
+                        </div>
+                        <h3>10 Essential Travel Tips for First-Time Backpackers</h3>
+                        <p>Discover the must-know tips that will make your first backpacking adventure safe, enjoyable, and unforgettable.</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rome Guide">
+                        <div class="blog-category">Destination</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 10, 2024</span>
+                            <span class="blog-author">By Marco Rossi</span>
+                        </div>
+                        <h3>Hidden Gems of Rome: Beyond the Tourist Trail</h3>
+                        <p>Explore Rome's secret spots and local favorites that most tourists never discover during their visit.</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with Our Latest Adventures</h2>
+                    <p>Subscribe to our newsletter and be the first to know about exclusive deals, new destinations, and travel tips.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <span class="section-subtitle">Contact</span>
+                    <h2 class="section-title">Get In Touch With Us</h2>
+                    <p class="section-description">Ready to start your next adventure? Contact our travel experts who are here to help you plan the perfect trip.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@tvl-travel.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>123 Travel Street, Adventure City, AC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Contact Us</button>
+                </div>
+                <div class="contact-map" data-aos="fade-left">
+                    <div class="map-container">
+                        <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Office Location">
+                        <div class="map-overlay">
+                            <div class="location-pin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TVL</h3>
+                    <p>Creating unforgettable travel experiences and connecting you with the world's most beautiful destinations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.017 0C8.396 0 7.989.016 6.756.072 5.526.127 4.718.302 4.019.57a5.962 5.962 0 00-2.153 1.4A5.962 5.962 0 00.434 4.123C.166 4.822-.009 5.63-.064 6.86-.12 8.093-.136 8.5-.136 12.121s.016 4.028.072 5.261c.055 1.23.23 2.038.498 2.737a5.962 5.962 0 001.4 2.153 5.962 5.962 0 002.154 1.4c.699.268 1.507.443 2.737.498 1.233.056 1.64.072 5.261.072s4.028-.016 5.261-.072c1.23-.055 2.038-.23 2.737-.498a5.962 5.962 0 002.153-1.4 5.962 5.962 0 001.4-2.154c.268-.699.443-1.507.498-2.737.056-1.233.072-1.64.072-5.261s-.016-4.028-.072-5.261c-.055-1.23-.23-2.038-.498-2.737a5.962 5.962 0 00-1.4-2.153A5.962 5.962 0 0019.877.57C19.178.302 18.37.127 17.14.072 15.907.016 15.5 0 11.879 0h.138zm-.077 2.16c3.667 0 4.103.016 5.551.071 1.34.061 2.068.284 2.551.471.641.25 1.099.548 1.579 1.028.48.48.778.938 1.028 1.579.187.483.41 1.211.471 2.551.055 1.448.071 1.884.071 5.551s-.016 4.103-.071 5.551c-.061 1.34-.284 2.068-.471 2.551-.25.641-.548 1.099-1.028 1.579-.48.48-.938.778-1.579 1.028-.483.187-1.211.41-2.551.471-1.448.055-1.884.071-5.551.071s-4.103-.016-5.551-.071c-1.34-.061-2.068-.284-2.551-.471-.641-.25-1.099-.548-1.579-1.028-.48-.48-.778-.938-1.028-1.579-.187-.483-.41-1.211-.471-2.551-.055-1.448-.071-1.884-.071-5.551s.016-4.103.071-5.551c.061-1.34.284-2.068.471-2.551.25-.641.548-1.099 1.028-1.579.48-.48.938-.778 1.579-1.028.483-.187 1.211-.41 2.551-.471 1.448-.055 1.884-.071 5.551-.071z" fill="currentColor"/>
+                                <path d="M12.017 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12.017 16a4 4 0 110-8 4 4 0 010 8zM19.846 5.595a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Flight Booking</a></li>
+                        <li><a href="#">Hotel Reservations</a></li>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Car Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TVL Travel. All rights reserved.</p>
+                <p>Made with ❤️ for travelers worldwide</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
