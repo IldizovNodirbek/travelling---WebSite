@@ -1069,6 +1069,33 @@ h1, h2, h3, h4, h5, h6 {
     background: #f8fafc;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6366f1;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
 .testimonials-slider {
     margin-top: 4rem;
     position: relative;
@@ -1084,14 +1111,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-slide {
-    display: none;
+    display: none; /* Faqat faol slayd ko‘rinadi */
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Silliq tranzitsiya */
+    transform: translateX(20px); /* Slayddan kirish animatsiyasi */
 }
 
 .testimonial-slide.active {
     display: block;
     opacity: 1;
+    transform: translateX(0); /* Faol slayd joyida */
 }
 
 .testimonial-card {
@@ -1176,6 +1205,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.1);
 }
 
+.nav-btn:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .testimonials-dots {
     display: flex;
     gap: 1rem;
@@ -1193,6 +1228,61 @@ h1, h2, h3, h4, h5, h6 {
 .dot.active {
     background: #6366f1;
     transform: scale(1.2);
+}
+
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 4rem 0;
+    }
+    .testimonial-card {
+        padding: 2rem;
+        max-width: 90%;
+    }
+    .testimonial-content p {
+        font-size: 1.125rem;
+    }
+    .testimonial-author img {
+        width: 60px;
+        height: 60px;
+    }
+    .author-info h4 {
+        font-size: 1.125rem;
+    }
+    .nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    .testimonials-slider {
+        max-width: 1200px;
+    }
 }
 
 /* Blog Section */
