@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVL - Discover Amazing Destinations</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">TVL</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -38,9 +44,10 @@
     <section class="hero" id="home">
         <div class="hero-background">
             <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
         </div>
         <div class="container">
-            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-content animate-fade-up">
                 <p class="hero-subtitle">Book Your Dream Trip</p>
                 <h1 class="hero-title">Discover Amazing Destinations Around The World</h1>
                 <p class="hero-description">Explore breathtaking locations, create unforgettable memories, and embark on the adventure of a lifetime with our curated travel experiences.</p>
@@ -51,35 +58,35 @@
             </div>
         </div>
         <div class="hero-destinations">
-            <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="destination-card animate-slide-up" style="animation-delay: 0.2s">
                 <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
                 <div class="destination-info">
                     <h3>Rome</h3>
                     <p>Italy</p>
                 </div>
             </div>
-            <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="destination-card animate-slide-up" style="animation-delay: 0.3s">
                 <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
                 <div class="destination-info">
                     <h3>New York</h3>
                     <p>USA</p>
                 </div>
             </div>
-            <div class="destination-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="destination-card animate-slide-up" style="animation-delay: 0.4s">
                 <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
                 <div class="destination-info">
                     <h3>Paris</h3>
                     <p>France</p>
                 </div>
             </div>
-            <div class="destination-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="destination-card animate-slide-up" style="animation-delay: 0.5s">
                 <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
                 <div class="destination-info">
                     <h3>Barcelona</h3>
                     <p>Spain</p>
                 </div>
             </div>
-            <div class="destination-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="destination-card animate-slide-up" style="animation-delay: 0.6s">
                 <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&w=400')"></div>
                 <div class="destination-info">
                     <h3>San Francisco</h3>
@@ -93,7 +100,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
+                <div class="about-text animate-fade-right">
                     <span class="section-subtitle">About Us</span>
                     <h2 class="section-title">Explore Our Planet Together</h2>
                     <p class="section-description">We are passionate travel enthusiasts dedicated to creating extraordinary experiences that connect you with the world's most beautiful destinations. Our expert team curates unique adventures that go beyond typical tourism.</p>
@@ -123,7 +130,7 @@
                     </div>
                     <button class="btn btn-primary">Learn More</button>
                 </div>
-                <div class="about-image" data-aos="fade-left">
+                <div class="about-image animate-fade-left">
                     <div class="image-container">
                         <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Adventure">
                         <div class="testimonial-card">
@@ -145,13 +152,13 @@
     <!-- Popular Destinations -->
     <section class="destinations">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header animate-fade-up">
                 <span class="section-subtitle">Exclusive Offers</span>
                 <h2 class="section-title">Popular Destinations</h2>
                 <p class="section-description">Discover our most sought-after destinations with special pricing and exclusive experiences.</p>
             </div>
             <div class="destinations-grid">
-                <div class="destination-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="destination-item animate-scale-up" style="animation-delay: 0.1s">
                     <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600')">
                         <div class="destination-overlay">
                             <div class="price-tag">$299</div>
@@ -167,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="destination-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-item animate-scale-up" style="animation-delay: 0.2s">
                     <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=600')">
                         <div class="destination-overlay">
                             <div class="price-tag">$399</div>
@@ -183,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="destination-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="destination-item animate-scale-up" style="animation-delay: 0.3s">
                     <div class="destination-image" style="background-image: url('https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=600')">
                         <div class="destination-overlay">
                             <div class="price-tag">$249</div>
@@ -206,12 +213,12 @@
     <!-- Tours Section -->
     <section class="tours" id="tours">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header animate-fade-up">
                 <span class="section-subtitle">Best Adventures</span>
                 <h2 class="section-title">Popular Tours & Expeditions</h2>
             </div>
             <div class="tours-grid">
-                <div class="tour-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="tour-card animate-slide-up" style="animation-delay: 0.1s">
                     <div class="tour-image">
                         <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rome Tour">
                         <div class="tour-badge">Popular</div>
@@ -231,7 +238,7 @@
                         <button class="btn btn-primary btn-full">Book Now</button>
                     </div>
                 </div>
-                <div class="tour-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="tour-card animate-slide-up" style="animation-delay: 0.2s">
                     <div class="tour-image">
                         <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=400" alt="New York Tour">
                         <div class="tour-badge">Hot Deal</div>
@@ -251,7 +258,7 @@
                         <button class="btn btn-primary btn-full">Book Now</button>
                     </div>
                 </div>
-                <div class="tour-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="tour-card animate-slide-up" style="animation-delay: 0.3s">
                     <div class="tour-image">
                         <img src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Barcelona Tour">
                     </div>
@@ -270,7 +277,7 @@
                         <button class="btn btn-primary btn-full">Book Now</button>
                     </div>
                 </div>
-                <div class="tour-card featured" data-aos="fade-up" data-aos-delay="400">
+                <div class="tour-card featured animate-slide-up" style="animation-delay: 0.4s">
                     <div class="tour-image">
                         <img src="https://images.pexels.com/photos/161853/eiffel-tower-paris-france-tower-161853.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Paris Tour">
                         <div class="tour-badge">Featured</div>
@@ -291,7 +298,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tours-cta" data-aos="fade-up">
+            <div class="tours-cta animate-fade-up">
                 <button class="btn btn-outline">View All Tours</button>
             </div>
         </div>
@@ -301,7 +308,7 @@
     <section class="services">
         <div class="container">
             <div class="services-content">
-                <div class="services-image" data-aos="fade-right">
+                <div class="services-image animate-fade-right">
                     <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Services">
                     <div class="services-card">
                         <div class="services-card-content">
@@ -310,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="services-text" data-aos="fade-left">
+                <div class="services-text animate-fade-left">
                     <span class="section-subtitle">Features</span>
                     <h2 class="section-title">Get Unique Experience</h2>
                     <p class="section-description">We provide comprehensive travel services to ensure your journey is seamless, comfortable, and unforgettable.</p>
@@ -357,13 +364,13 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header animate-fade-up">
                 <span class="section-subtitle">Testimonials</span>
                 <h2 class="section-title">What Our Travelers Say</h2>
             </div>
-            <div class="testimonials-slider swiper" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="testimonials-slider" id="testimonials-slider">
+                <div class="testimonials-wrapper">
+                    <div class="testimonial-slide active">
                         <div class="testimonial-card">
                             <div class="testimonial-content">
                                 <div class="quote-icon">
@@ -382,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="testimonial-content">
                                 <div class="quote-icon">
@@ -401,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="testimonial-slide">
                         <div class="testimonial-card">
                             <div class="testimonial-content">
                                 <div class="quote-icon">
@@ -421,7 +428,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="testimonials-nav">
+                    <button class="nav-btn prev-btn" id="prev-btn">‹</button>
+                    <div class="testimonials-dots" id="testimonials-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="nav-btn next-btn" id="next-btn">›</button>
+                </div>
             </div>
         </div>
     </section>
@@ -429,13 +444,15 @@
     <!-- Blog Section -->
     <section class="blog" id="blog">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Our Blog</span>
-                <h2 class="section-title">Latest Travel Stories</h2>
+            <div class="section-header animate-fade-up">
+                <div class="section-header-content">
+                    <span class="section-subtitle">Our Blog</span>
+                    <h2 class="section-title">Latest Travel Stories</h2>
+                </div>
                 <button class="btn btn-outline">View All Posts</button>
             </div>
             <div class="blog-grid">
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <article class="blog-card animate-scale-up" style="animation-delay: 0.1s">
                     <div class="blog-image">
                         <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Travel Tips">
                         <div class="blog-category">Travel Tips</div>
@@ -450,7 +467,7 @@
                         <a href="#" class="blog-link">Read More</a>
                     </div>
                 </article>
-                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <article class="blog-card animate-scale-up" style="animation-delay: 0.2s">
                     <div class="blog-image">
                         <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rome Guide">
                         <div class="blog-category">Destination</div>
@@ -472,7 +489,7 @@
     <!-- Newsletter Section -->
     <section class="newsletter">
         <div class="container">
-            <div class="newsletter-content" data-aos="fade-up">
+            <div class="newsletter-content animate-fade-up">
                 <div class="newsletter-text">
                     <h2>Stay Updated with Our Latest Adventures</h2>
                     <p>Subscribe to our newsletter and be the first to know about exclusive deals, new destinations, and travel tips.</p>
@@ -491,7 +508,7 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
+                <div class="contact-info animate-fade-right">
                     <span class="section-subtitle">Contact</span>
                     <h2 class="section-title">Get In Touch With Us</h2>
                     <p class="section-description">Ready to start your next adventure? Contact our travel experts who are here to help you plan the perfect trip.</p>
@@ -533,7 +550,7 @@
                     </div>
                     <button class="btn btn-primary">Contact Us</button>
                 </div>
-                <div class="contact-map" data-aos="fade-left">
+                <div class="contact-map animate-fade-left">
                     <div class="map-container">
                         <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Office Location">
                         <div class="map-overlay">
@@ -613,9 +630,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
