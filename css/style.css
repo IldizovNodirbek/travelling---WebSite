@@ -329,6 +329,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     overflow: hidden;
     padding-top: 100px;
+    padding-bottom: 150px; 
 }
 
 .hero-background {
@@ -375,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 0;
-    z-index: 10;
+    z-index: 20; 
 }
 
 .hero-subtitle {
@@ -415,15 +416,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-destinations {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative; 
+    margin-top: 2rem; 
     display: flex;
     gap: 1.5rem;
-    z-index: 10;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 10;
 }
 
 .destination-card {
@@ -475,6 +474,109 @@ h1, h2, h3, h4, h5, h6 {
     color: #6b7280;
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-bottom: 100px; 
+    }
+    .hero-title {
+        font-size: clamp(2rem, 6vw, 3.5rem); 
+    }
+    .hero-description {
+        font-size: 1.125rem;
+    }
+    .hero-destinations {
+        margin-top: 1rem; 
+    }
+    .destination-card {
+        width: 180px; 
+    }
+    .btn-large {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    .destination-card {
+        width: 250px; 
+    }
 }
 
 /* About Section */
