@@ -401,78 +401,87 @@ class TestimonialsManager {
         this.nextBtn = document.getElementById('next-btn');
         this.currentSlide = 0;
         this.autoPlayInterval = null;
-        
-        if (this.slider) {
-            this.init();
+
+        if (!this.slider || !this.slides.length || !this.dots.length || !this.prevBtn || !this.nextBtn) {
+            console.error('Testimonials slider elementlari topilmadi yoki yetarli emas.');
+            return;
         }
+
+        this.init();
     }
-    
+
     init() {
         this.setupEventListeners();
-        this.startAutoPlay();
         this.updateSlider();
+        this.startAutoPlay();
     }
-    
+
     setupEventListeners() {
         // Navigation buttons
         this.prevBtn.addEventListener('click', () => {
+            this.stopAutoPlay();
             this.prevSlide();
+            this.startAutoPlay();
         });
-        
+
         this.nextBtn.addEventListener('click', () => {
+            this.stopAutoPlay();
             this.nextSlide();
+            this.startAutoPlay();
         });
-        
+
         // Dots navigation
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
+                this.stopAutoPlay();
                 this.goToSlide(index);
+                this.startAutoPlay();
             });
         });
-        
+
         // Pause auto-play on hover
-        this.slider.addEventListener('mouseenter', () => {
-            this.stopAutoPlay();
-        });
-        
-        this.slider.addEventListener('mouseleave', () => {
-            this.startAutoPlay();
-        });
+        this.slider.addEventListener('mouseenter', () => this.stopAutoPlay());
+        this.slider.addEventListener('mouseleave', () => this.startAutoPlay());
     }
-    
+
     nextSlide() {
         this.currentSlide = (this.currentSlide + 1) % this.slides.length;
         this.updateSlider();
     }
-    
+
     prevSlide() {
         this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
         this.updateSlider();
     }
-    
+
     goToSlide(index) {
-        this.currentSlide = index;
-        this.updateSlider();
+        if (index >= 0 && index < this.slides.length) {
+            this.currentSlide = index;
+            this.updateSlider();
+        }
     }
-    
+
     updateSlider() {
-        // Update slides
         this.slides.forEach((slide, index) => {
             slide.classList.toggle('active', index === this.currentSlide);
         });
-        
-        // Update dots
-        this.dots.forEach((dot, index) => {
+
+         this.dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === this.currentSlide);
         });
+
+        
+        this.prevBtn.disabled = this.currentSlide === 0;
+        this.nextBtn.disabled = this.currentSlide === this.slides.length - 1;
     }
-    
+
     startAutoPlay() {
+        this.stopAutoPlay(); 
         this.autoPlayInterval = setInterval(() => {
             this.nextSlide();
-        }, 5000);
+        }, 5000); 
     }
-    
+
     stopAutoPlay() {
         if (this.autoPlayInterval) {
             clearInterval(this.autoPlayInterval);
@@ -480,6 +489,11 @@ class TestimonialsManager {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    new TestimonialsManager();
+});
+
 
 // Scroll Reveal Manager
 class ScrollRevealManager {
